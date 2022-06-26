@@ -843,7 +843,13 @@ const listft =`
 `
 
 var hoid =`*───╼[  _LIST-MENU_  ]╾───➲*`
-var head = `*╭───╼[ _${global.packname}_ ]╾──➲*`
+var head = `*╭───╼[ _${global.packname}_ ]╾──➲*
+  ❑ *DATA INFO*
+${left} *▷ Library : Baileys - Multi Device*
+${left} *▷ Language : JavaScript*
+${left} *▷ Tanggal : ${hri}${buln[bulnh]}${syear}*
+${left} *▷ Waktu : ${time2} Wib*
+${left}`
 var left = "*│*"
 var branch = "*├*"
 var bracketmenu = "*┞─╼「"
