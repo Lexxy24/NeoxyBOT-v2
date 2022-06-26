@@ -849,7 +849,7 @@ var bracketmenu = "*┞─╼「"
 var F = "」*"
 var A = "*┟*"
 var B = "*┞*"
-var stick = "*╿❑*"
+var stick = "*╿▷*"
 var stkci = "*╿*"
 var borderlist = "*╭╾───────────────╼╮*"
 var borderlistend = "*╰╾───────────────╼╯*"
@@ -860,11 +860,11 @@ var endbordertqto = "*╰╾───────────────╾╯*
 var end = "*╰╾────────────╼*"
 var juh = "*╰╾────────────────╼*"
 var head = `*╭───╼[ _${global.packname}_ ]╾──➲*
-${left}
-${left} ❑ Library : Baileys Multi Device*
-${left} ❑ Language : JavaScript*
-${left} ❑ Tanggal : ${hri}${buln[bulnh]}${syear}*
-${left} ❑ Waktu : ${time2} Wib*
+${left}*
+${left} › Library : Baileys Multi Device*
+${left} › Language : JavaScript*
+${left} › Tanggal : ${hri}${buln[bulnh]}${syear}*
+${left} › Waktu : ${time2} Wib*
 ${left}*`
 
 const groupmenu =`
