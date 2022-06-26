@@ -926,7 +926,7 @@ ${stkci}
 ${end}
   `
 const downloadmenu =`
-${stkci}
+${head}
 ${bracketmenu} _Download Menu_ ${F}
 ${stick}
 ${stick} #instagram 
@@ -1145,7 +1145,7 @@ const othersmenu =`
 ${head}
 ${bracketmenu} _Others Menu_ ${F}
 ${stkci}
-${stkci} #owner 
+${stick} #owner 
 ${stick} #listpc 
 ${stick} #listgc 
 ${stick} #mcserver 
@@ -1164,7 +1164,7 @@ ${stick} #infochat
 ${stick} #request 
 ${stick} #report 
 ${stick} #donate 
-${stkci} #listonline 
+${stick} #listonline 
 ${stkci}
 ${end}
 `
