@@ -842,23 +842,23 @@ const listft =`
   • #listonline 
 `
 
-let hoid =`*───╼[  _LIST-MENU_  ]╾───➲*`
-let head = `*╭───╼[ _${global.botname}_ ]╾──➲*`
-let left = "*│*"
-let branch = "*├*"
-let bracketmenu = "*┞─╼「"
-let F = "」*"
-let A = "*┟*"
-let B = "*┞*"
-let stick = "*╿➵*"
-let borderlist = "*╭╾───────────────╼╮*"
-let borderlistend = "*╰╾───────────────╼╯*"
-let opener = "*╭─────────────────╮*"
-let closing = "*╰─────────────────╯*"
-let headtqto = "*╭╾─「 _Thanks To✨_ 」╾───╮*"
-let endbordertqto = "*╰╾───────────────╾╯*"
-let end = "*╰╾────────────╼*"
-let juh = "*╰╾────────────────╼*"
+var hoid =`*───╼[  _LIST-MENU_  ]╾───➲*`
+var head = `*╭───╼[ _${global.botname}_ ]╾──➲*`
+var left = "*│*"
+var branch = "*├*"
+var bracketmenu = "*┞─╼「"
+var F = "」*"
+var A = "*┟*"
+var B = "*┞*"
+var stick = "*╿➵*"
+var borderlist = "*╭╾───────────────╼╮*"
+var borderlistend = "*╰╾───────────────╼╯*"
+var opener = "*╭─────────────────╮*"
+var closing = "*╰─────────────────╯*"
+var headtqto = "*╭╾─「 _Thanks To✨_ 」╾───╮*"
+var endbordertqto = "*╰╾───────────────╾╯*"
+var end = "*╰╾────────────╼*"
+var juh = "*╰╾────────────────╼*"
 
 const groupmenu =`
 ${bracketmenu} *_Group Menu_* ${F}
