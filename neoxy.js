@@ -843,7 +843,7 @@ const listft =`
 `
 
 var hoid =`*───╼[  _LIST-MENU_  ]╾───➲*`
-var left = "*│*"
+var left = "*│"
 var branch = "*├*"
 var bracketmenu = "*┞─╼「"
 var F = "」*"
@@ -860,11 +860,10 @@ var endbordertqto = "*╰╾───────────────╾╯*
 var end = "*╰╾────────────╼*"
 var juh = "*╰╾────────────────╼*"
 var head = `*╭───╼[ _${global.packname}_ ]╾──➲*
-  ❑ *DATA INFO*
-${left} *▷ Library : Baileys - Multi Device*
-${left} *▷ Language : JavaScript*
-${left} *▷ Tanggal : ${hri}${buln[bulnh]}${syear}*
-${left} *▷ Waktu : ${time2} Wib*
+${left} ❑ Library : Baileys Multi Device*
+${left} ❑ Language : JavaScript*
+${left} ❑ Tanggal : ${hri}${buln[bulnh]}${syear}*
+${left} ❑ Waktu : ${time2} Wib*
 ${left}`
 
 const groupmenu =`
