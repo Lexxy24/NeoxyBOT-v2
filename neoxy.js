@@ -860,11 +860,12 @@ var endbordertqto = "*╰╾───────────────╾╯*
 var end = "*╰╾────────────╼*"
 var juh = "*╰╾────────────────╼*"
 var head = `*╭───╼[ _${global.packname}_ ]╾──➲*
+${left}
 ${left} ❑ Library : Baileys Multi Device*
 ${left} ❑ Language : JavaScript*
 ${left} ❑ Tanggal : ${hri}${buln[bulnh]}${syear}*
 ${left} ❑ Waktu : ${time2} Wib*
-${left}`
+${left}*`
 
 const groupmenu =`
 ${head}
