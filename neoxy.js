@@ -3643,8 +3643,8 @@ ads('Sukses Broadcast')
 addCmd(command.slice(1), 1, commund)
 break
 case 'sc': case 'script': case 'donate': case 'donasi': case 'cekupdate': case 'updatebot': case 'cekbot': case 'sourcecode': {
-teks = `「 NEOXY ~ MD」\nhttps://youtube.com/channel/UCGDk88W54RJOgk6b1p42NVg`
-teks += `Dont Forget Donate`
+teks = `「 *${global.packname}* 」\n\n*Source Code* :\nhttps://github.com/Lexxy24/Neoxy-Base\nScript NeoxyBot.v1 :\nhttps://youtu.be/Pxman4zgIC4\n`
+teks += `Donasi Bot, Agar Bot Selalu Update Dan Online 24 Jam, Terima Kasih`
 let buttons = [
 {buttonId: `${prefix}menu`, buttonText: {displayText: 'Menu'}, type: 1}
 ]
