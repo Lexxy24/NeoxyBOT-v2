@@ -1144,6 +1144,7 @@ ${end}
 const othersmenu =`
 ${head}
 ${bracketmenu} _Others Menu_ ${F}
+${stkci}
 ${stkci} #owner 
 ${stick} #listpc 
 ${stick} #listgc 
@@ -1164,6 +1165,7 @@ ${stick} #request
 ${stick} #report 
 ${stick} #donate 
 ${stkci} #listonline 
+${stkci}
 ${end}
 `
 const rulesbot =`
