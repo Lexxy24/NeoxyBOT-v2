@@ -928,7 +928,7 @@ ${end}
 const downloadmenu =`
 ${head}
 ${bracketmenu} _Download Menu_ ${F}
-${stick}
+${stkci}
 ${stick} #instagram 
 ${stick} #tiktok 
 ${stick} #twitter 
