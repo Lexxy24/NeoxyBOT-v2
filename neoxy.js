@@ -600,7 +600,7 @@ const swtext =`▷ *LIST HARGA SEWABOT*
 ${kb}${global.txtSewabot}${kb}`
 
 const listft =`
- ${bracketmenu} *_Group Menu_*
+ ❑ *_Group Menu_*
   • #linkgroup 
   • #setppgc 
   • #setname 
@@ -625,13 +625,13 @@ const listft =`
   • #editinfo <open/close>
   • #ceksewa 
   
- ${bracketmenu} *_Store Menu_*
+ ❑ *_Store Menu_*
   • #addlist 
   • #dellist 
   • #updatelist 
   • #list 
 
- ${bracketmenu} *_Owner Menu_*
+ ❑ *_Owner Menu_*
   • #self 
   • #sewa <add/del>
   • #listsewa 
@@ -643,7 +643,7 @@ const listft =`
   • #ban <add/del>
   • #cowner <add/del>
   
- ${bracketmenu} *_Download Menu_*
+ ❑ *_Download Menu_*
   • #instagram 
   • #tiktok 
   • #twitter 
@@ -661,7 +661,7 @@ const listft =`
   • #tiktoknowm
   • #mediafire
 
- ${bracketmenu} *_Search Menu_*
+ ❑ *_Search Menu_*
   • #gimage 
   • #ytsearch 
   • #searchgc 
@@ -672,7 +672,7 @@ const listft =`
   • #google 
   • #pinterest 
 
- ${bracketmenu} *_Convert Menu_*
+ ❑ *_Convert Menu_*
   • #sticker  
   • #stickerwm 
   • #tomp3 
@@ -683,14 +683,14 @@ const listft =`
   • #tomp4 
   • #toimage 
   
- ${bracketmenu} *_Nulis Menu_*
+ ❑ *_Nulis Menu_*
   • #nulis
   • #nuliskiri
   • #nuliskanan
   • #foliokiri
   • #foliokanan
 
- ${bracketmenu} *_Tools Menu_*
+ ❑ *_Tools Menu_*
   • #inspect 
   • #getname 
   • #getpic 
@@ -720,7 +720,7 @@ const listft =`
   • #patrick
   • #bucinsticker
 
- ${bracketmenu} *_Games Menu_*
+ ❑ *_Games Menu_*
   • #halah 
   • #hilih 
   • #huluh 
@@ -733,7 +733,7 @@ const listft =`
   • #family100 
   • #suitpvp
 
- ${bracketmenu} *_Maker Menu_*
+ ❑ *_Maker Menu_*
   • #3dbox   
   • #drapwater   
   • #lion2   
@@ -809,7 +809,7 @@ const listft =`
   • #steel3d  
   • #wallgravity  
 
- ${bracketmenu} *_Storage Menu_*
+ ❑ *_Storage Menu_*
   • #setcmd 
   • #listcmd 
   • #delcmd 
@@ -819,7 +819,7 @@ const listft =`
   • #getmsg 
   • #delmsg 
 
- ${bracketmenu} *_Others Menu_*
+ ❑ *_Others Menu_*
   • #owner 
   • #listpc 
   • #listgc 
@@ -843,14 +843,15 @@ const listft =`
 `
 
 var hoid =`*───╼[  _LIST-MENU_  ]╾───➲*`
-var head = `*╭───╼[ _${global.botname}_ ]╾──➲*`
+var head = `*╭───╼[ _${global.packname}_ ]╾──➲*`
 var left = "*│*"
 var branch = "*├*"
 var bracketmenu = "*┞─╼「"
 var F = "」*"
 var A = "*┟*"
 var B = "*┞*"
-var stick = "*╿➵*"
+var stick = "*╿❑*"
+var stkci = "*╿*
 var borderlist = "*╭╾───────────────╼╮*"
 var borderlistend = "*╰╾───────────────╼╯*"
 var opener = "*╭─────────────────╮*"
@@ -861,8 +862,9 @@ var end = "*╰╾────────────╼*"
 var juh = "*╰╾────────────────╼*"
 
 const groupmenu =`
-${bracketmenu} *_Group Menu_* ${F}
-${stick}
+${head}
+${bracketmenu} _Group Menu_ ${F}
+${stkci}
 ${stick} #linkgroup 
 ${stick} #setppgc 
 ${stick} #setname 
@@ -886,22 +888,24 @@ ${stick} #revoke
 ${stick} #group <open/close>
 ${stick} #editinfo <open/close>
 ${stick} #ceksewa
-${stick}
+${stkci}
 ${end}
 `
 const storemenu =`
-${bracketmenu} *_Store Menu_* ${F}
-${stick}
+${head}
+${bracketmenu} _Store Menu_ ${F}
+${stkci}
 ${stick} #addlist 
 ${stick} #dellist 
 ${stick} #updatelist 
 ${stick} #list 
-${stick}
+${stkci}
 ${end}
   `
 const ownermenu =`
-${bracketmenu} *_Owner Menu_* ${F}
-${stick}
+${head}
+${bracketmenu} _Owner Menu_ ${F}
+${stkci}
 ${stick} #self 
 ${stick} #sewa <add/del>
 ${stick} #listsewa 
@@ -912,11 +916,12 @@ ${stick} #chat
 ${stick} #antitag 
 ${stick} #ban <add/del>
 ${stick} #cowner <add/del>
-${stick}
+${stkci}
 ${end}
   `
 const downloadmenu =`
-${bracketmenu} *_Download Menu_* ${F}
+${stkci}
+${bracketmenu} _Download Menu_ ${F}
 ${stick}
 ${stick} #instagram 
 ${stick} #tiktok 
@@ -934,12 +939,13 @@ ${stick} #tiktokmp3
 ${stick} #tiktokaudio
 ${stick} #tiktoknowm
 ${stick} #mediafire
-${stick}
+${stkci}
 ${end}
   `
 const searchmenu =`
-${bracketmenu} *_Search Menu_* ${F}
-${stick}
+${head}
+${bracketmenu} _Search Menu_ ${F}
+${stkci}
 ${stick} #gimage 
 ${stick} #ytsearch 
 ${stick} #searchgc 
@@ -949,12 +955,13 @@ ${stick} #servermc
 ${stick} #mcpedl 
 ${stick} #google 
 ${stick} #pinterest 
-${stick}
+${stkci}
 ${end}
   `
 const convertmenu =`
-${bracketmenu} *_Convert Menu_* ${F}
-${stick}
+${head}
+${bracketmenu} _Convert Menu_ ${F}
+${stkci}
 ${stick} #sticker  
 ${stick} #stickerwm 
 ${stick} #tomp3 
@@ -964,23 +971,25 @@ ${stick} #togif
 ${stick} #tourl 
 ${stick} #tomp4 
 ${stick} #toimage
-${stick}
+${stkci}
 ${end}
   `
 const nulismenu =`
-${bracketmenu} *_Nulis Menu_* ${F}
-${stick}
+${head}
+${bracketmenu} _Nulis Menu_ ${F}
+${stkci}
 ${stick} #nulis
 ${stick} #nuliskiri
 ${stick} #nuliskanan
 ${stick} #foliokiri
 ${stick} #foliokanan
-${stick}
+${stkci}
 ${end}
   `
 const toolsmenu =`
-${bracketmenu} *_Tools Menu_* ${F}
-${stick}
+${head}
+${bracketmenu} _Tools Menu_ ${F}
+${stkci}
 ${stick} #inspect 
 ${stick} #getname 
 ${stick} #getpic 
@@ -1009,12 +1018,13 @@ ${stick} #attp
 ${stick} #doge unde
 ${stick} #patrick
 ${stick} #bucinsticker
-${stick}
+${stkci}
 ${end}
   `
 const gamesmenu =`
-${bracketmenu} *_Games Menu_* ${F}
-${stick}
+${head}
+${bracketmenu} _Games Menu_ ${F}
+${stkci}
 ${stick} #halah 
 ${stick} #hilih 
 ${stick} #huluh 
@@ -1026,12 +1036,13 @@ ${stick} #delttt
 ${stick} #tebak 
 ${stick} #family100 
 ${stick} #suitpvp
-${stick}
+${stkci}
 ${end}
   `
 const makermenu =`
-${bracketmenu} *_Maker Menu_* ${F}
-${stick}
+${head}
+${bracketmenu} _Maker Menu_ ${F}
+${stkci}
 ${stick} #3dbox   
 ${stick} #drapwater   
 ${stick} #lion2   
@@ -1106,12 +1117,13 @@ ${stick} #lionlogo
 ${stick} #wolflogo  
 ${stick} #steel3d  
 ${stick} #wallgravity
-${stick}
+${stkci}
 ${end}
   `
 const storagemenu =`
-${bracketmenu} *_Storage Menu_* ${F}
-${stick}
+${head}
+${bracketmenu} _Storage Menu_ ${F}
+${stkci}
 ${stick} #setcmd 
 ${stick} #listcmd 
 ${stick} #delcmd 
@@ -1120,12 +1132,13 @@ ${stick} #addmsg
 ${stick} #listmsg 
 ${stick} #getmsg 
 ${stick} #delmsg 
-${stick}
+${stkci}
 ${end}
   `
 const othersmenu =`
-${bracketmenu} *_Others Menu_* ${F}
-${stick} #owner 
+${head}
+${bracketmenu} _Others Menu_ ${F}
+${stkci} #owner 
 ${stick} #listpc 
 ${stick} #listgc 
 ${stick} #mcserver 
@@ -1144,7 +1157,7 @@ ${stick} #infochat
 ${stick} #request 
 ${stick} #report 
 ${stick} #donate 
-${stick} #listonline 
+${stkci} #listonline 
 ${end}
 `
 const rulesbot =`
