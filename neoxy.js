@@ -600,7 +600,7 @@ const swtext =`▷ *LIST HARGA SEWABOT*
 ${kb}${global.txtSewabot}${kb}`
 
 const listft =`
- ❑ *_Group Menu_*
+ ${bracketmenu} *_Group Menu_*
   • #linkgroup 
   • #setppgc 
   • #setname 
@@ -625,13 +625,13 @@ const listft =`
   • #editinfo <open/close>
   • #ceksewa 
   
- ❑ *_Store Menu_*
+ ${bracketmenu} *_Store Menu_*
   • #addlist 
   • #dellist 
   • #updatelist 
   • #list 
 
- ❑ *_Owner Menu_*
+ ${bracketmenu} *_Owner Menu_*
   • #self 
   • #sewa <add/del>
   • #listsewa 
@@ -643,7 +643,7 @@ const listft =`
   • #ban <add/del>
   • #cowner <add/del>
   
- ❑ *_Download Menu_*
+ ${bracketmenu} *_Download Menu_*
   • #instagram 
   • #tiktok 
   • #twitter 
@@ -661,7 +661,7 @@ const listft =`
   • #tiktoknowm
   • #mediafire
 
- ❑ *_Search Menu_*
+ ${bracketmenu} *_Search Menu_*
   • #gimage 
   • #ytsearch 
   • #searchgc 
@@ -672,7 +672,7 @@ const listft =`
   • #google 
   • #pinterest 
 
- ❑ *_Convert Menu_*
+ ${bracketmenu} *_Convert Menu_*
   • #sticker  
   • #stickerwm 
   • #tomp3 
@@ -683,14 +683,14 @@ const listft =`
   • #tomp4 
   • #toimage 
   
- ❑ *_Nulis Menu_*
+ ${bracketmenu} *_Nulis Menu_*
   • #nulis
   • #nuliskiri
   • #nuliskanan
   • #foliokiri
   • #foliokanan
 
- ❑ *_Tools Menu_*
+ ${bracketmenu} *_Tools Menu_*
   • #inspect 
   • #getname 
   • #getpic 
@@ -720,7 +720,7 @@ const listft =`
   • #patrick
   • #bucinsticker
 
- ❑ *_Games Menu_*
+ ${bracketmenu} *_Games Menu_*
   • #halah 
   • #hilih 
   • #huluh 
@@ -733,7 +733,7 @@ const listft =`
   • #family100 
   • #suitpvp
 
- ❑ *_Maker Menu_*
+ ${bracketmenu} *_Maker Menu_*
   • #3dbox   
   • #drapwater   
   • #lion2   
@@ -809,7 +809,7 @@ const listft =`
   • #steel3d  
   • #wallgravity  
 
- ❑ *_Storage Menu_*
+ ${bracketmenu} *_Storage Menu_*
   • #setcmd 
   • #listcmd 
   • #delcmd 
@@ -819,7 +819,7 @@ const listft =`
   • #getmsg 
   • #delmsg 
 
- ❑ *_Others Menu_*
+ ${bracketmenu} *_Others Menu_*
   • #owner 
   • #listpc 
   • #listgc 
@@ -841,258 +841,311 @@ const listft =`
   • #donate 
   • #listonline 
 `
+
+let hoid =`*───╼[  _LIST-MENU_  ]╾───➲*`
+let head = `*╭───╼[ _${global.botname}_ ]╾──➲*`
+let left = "*│*"
+let branch = "*├*"
+let bracketmenu = "*┞─╼「"
+let F = "」*"
+let A = "*┟*"
+let B = "*┞*"
+let stick = "*╿➵*"
+let borderlist = "*╭╾───────────────╼╮*"
+let borderlistend = "*╰╾───────────────╼╯*"
+let opener = "*╭─────────────────╮*"
+let closing = "*╰─────────────────╯*"
+let headtqto = "*╭╾─「 _Thanks To✨_ 」╾───╮*"
+let endbordertqto = "*╰╾───────────────╾╯*"
+let end = "*╰╾────────────╼*"
+let juh = "*╰╾────────────────╼*"
+
 const groupmenu =`
-❑ *_Group Menu_*
-  • #linkgroup 
-  • #setppgc 
-  • #setname 
-  • #setdesc 
-  • #ephemeral 
-  • #hidetag 
-  • #tagall 
-  • #promote 
-  • #demote 
-  • #vote 
-  • #devote 
-  • #upvote 
-  • #cekvote 
-  • #hapusvote 
-  • #antilink <on/off>
-  • #welcome <on/off>
-  • #autorevoke <on/off>
-  • #add 
-  • #kick 
-  • #revoke 
-  • #group <open/close>
-  • #editinfo <open/close>
-  • #ceksewa
-  `
+${bracketmenu} *_Group Menu_* ${F}
+${stick}
+${stick} #linkgroup 
+${stick} #setppgc 
+${stick} #setname 
+${stick} #setdesc 
+${stick} #ephemeral 
+${stick} #hidetag 
+${stick} #tagall 
+${stick} #promote 
+${stick} #demote 
+${stick} #vote 
+${stick} #devote 
+${stick} #upvote 
+${stick} #cekvote 
+${stick} #hapusvote 
+${stick} #antilink <on/off>
+${stick} #welcome <on/off>
+${stick} #autorevoke <on/off>
+${stick} #add 
+${stick} #kick 
+${stick} #revoke 
+${stick} #group <open/close>
+${stick} #editinfo <open/close>
+${stick} #ceksewa
+${stick}
+${end}
+`
 const storemenu =`
-❑ *_Store Menu_*
-  • #addlist 
-  • #dellist 
-  • #updatelist 
-  • #list 
+${bracketmenu} *_Store Menu_* ${F}
+${stick}
+${stick} #addlist 
+${stick} #dellist 
+${stick} #updatelist 
+${stick} #list 
+${stick}
+${end}
   `
 const ownermenu =`
-❑ *_Owner Menu_*
-  • #self 
-  • #sewa <add/del>
-  • #listsewa 
-  • #public 
-  • #bcall 
-  • #bcgroup 
-  • #chat 
-  • #antitag 
-  • #ban <add/del>
-  • #cowner <add/del>
+${bracketmenu} *_Owner Menu_* ${F}
+${stick}
+${stick} #self 
+${stick} #sewa <add/del>
+${stick} #listsewa 
+${stick} #public 
+${stick} #bcall 
+${stick} #bcgroup 
+${stick} #chat 
+${stick} #antitag 
+${stick} #ban <add/del>
+${stick} #cowner <add/del>
+${stick}
+${end}
   `
 const downloadmenu =`
-❑ *_Download Menu_*
-  • #instagram 
-  • #tiktok 
-  • #twitter 
-  • #facebook 
-  • #youtube 
-  • #igstory 
-  • #jpeg 
-  • #mp4 
-  • #ytmp3
-  • #ytmp4
-  • #ytplay
-  • #tiktok
-  • #tiktokmp3
-  • #tiktokaudio
-  • #tiktoknowm
-  • #mediafire
+${bracketmenu} *_Download Menu_* ${F}
+${stick}
+${stick} #instagram 
+${stick} #tiktok 
+${stick} #twitter 
+${stick} #facebook 
+${stick} #youtube 
+${stick} #igstory 
+${stick} #jpeg 
+${stick} #mp4 
+${stick} #ytmp3
+${stick} #ytmp4
+${stick} #ytplay
+${stick} #tiktok
+${stick} #tiktokmp3
+${stick} #tiktokaudio
+${stick} #tiktoknowm
+${stick} #mediafire
+${stick}
+${end}
   `
 const searchmenu =`
-❑ *_Search Menu_*
-  • #gimage 
-  • #ytsearch 
-  • #searchgc 
-  • #play 
-  • #happymod 
-  • #servermc 
-  • #mcpedl 
-  • #google 
-  • #pinterest 
+${bracketmenu} *_Search Menu_* ${F}
+${stick}
+${stick} #gimage 
+${stick} #ytsearch 
+${stick} #searchgc 
+${stick} #play 
+${stick} #happymod 
+${stick} #servermc 
+${stick} #mcpedl 
+${stick} #google 
+${stick} #pinterest 
+${stick}
+${end}
   `
 const convertmenu =`
-❑ *_Convert Menu_*
-  • #sticker  
-  • #stickerwm 
-  • #tomp3 
-  • #tovn 
-  • #toaudio 
-  • #togif 
-  • #tourl 
-  • #tomp4 
-  • #toimage
+${bracketmenu} *_Convert Menu_* ${F}
+${stick}
+${stick} #sticker  
+${stick} #stickerwm 
+${stick} #tomp3 
+${stick} #tovn 
+${stick} #toaudio 
+${stick} #togif 
+${stick} #tourl 
+${stick} #tomp4 
+${stick} #toimage
+${stick}
+${end}
   `
 const nulismenu =`
-❑ *_Nulis Menu_*
-  • #nulis
-  • #nuliskiri
-  • #nuliskanan
-  • #foliokiri
-  • #foliokanan
+${bracketmenu} *_Nulis Menu_* ${F}
+${stick}
+${stick} #nulis
+${stick} #nuliskiri
+${stick} #nuliskanan
+${stick} #foliokiri
+${stick} #foliokanan
+${stick}
+${end}
   `
 const toolsmenu =`
-❑ *_Tools Menu_*
-  • #inspect 
-  • #getname 
-  • #getpic 
-  • #nulis 
-  • #kalkulator 
-  • #quoted 
-  • #join 
-  • #fliptext 
-  • #tohuruf 
-  • #volume 
-  • #bass
-  • #blown
-  • #deep
-  • #earrape
-  • #fast
-  • #fat
-  • #nightcore
-  • #reverse
-  • #robot
-  • #slow
-  • #tupai
-  • #translate 
-  • #emoji 
-  • #emojimix 
-  • #attp 
-  • #doge unde
-  • #patrick
-  • #bucinsticker
+${bracketmenu} *_Tools Menu_* ${F}
+${stick}
+${stick} #inspect 
+${stick} #getname 
+${stick} #getpic 
+${stick} #nulis 
+${stick} #kalkulator 
+${stick} #quoted 
+${stick} #join 
+${stick} #fliptext 
+${stick} #tohuruf 
+${stick} #volume 
+${stick} #bass
+${stick} #blown
+${stick} #deep
+${stick} #earrape
+${stick} #fast
+${stick} #fat
+${stick} #nightcore
+${stick} #reverse
+${stick} #robot
+${stick} #slow
+${stick} #tupai
+${stick} #translate 
+${stick} #emoji 
+${stick} #emojimix 
+${stick} #attp 
+${stick} #doge unde
+${stick} #patrick
+${stick} #bucinsticker
+${stick}
+${end}
   `
 const gamesmenu =`
-❑ *_Games Menu_*
-  • #halah 
-  • #hilih 
-  • #huluh 
-  • #heleh 
-  • #holoh 
-  • #math 
-  • #tictactoe 
-  • #delttt 
-  • #tebak 
-  • #family100 
-  • #suitpvp
+${bracketmenu} *_Games Menu_* ${F}
+${stick}
+${stick} #halah 
+${stick} #hilih 
+${stick} #huluh 
+${stick} #heleh 
+${stick} #holoh 
+${stick} #math 
+${stick} #tictactoe 
+${stick} #delttt 
+${stick} #tebak 
+${stick} #family100 
+${stick} #suitpvp
+${stick}
+${end}
   `
 const makermenu =`
-❑ *_Maker Menu_*
-  • #3dbox   
-  • #drapwater   
-  • #lion2   
-  • #papercut   
-  • #transformer   
-  • #herryp   
-  • #neondevil   
-  • #3dstone   
-  • #3davengers   
-  • #thunder   
-  • #window   
-  • #graffiti   
-  • #pornhub   
-  • #glitch   
-  • #blackping   
-  • #glitch3   
-  • #glitch2   
-  • #3dspace   
-  • #lion   
-  • #3dneon   
-  • #neon   
-  • #greenneon   
-  • #bokeh   
-  • #hollographic   
-  • #bear   
-  • #wolf   
-  • #joker   
-  • #dropwater   
-  • #neonlight   
-  • #thewall   
-  • #natural   
-  • #carbon   
-  • #pencil   
-  • #blackpink  
-  • #neon  
-  • #greenneon  
-  • #advanceglow  
-  • #futureneon  
-  • #sandwriting  
-  • #sandsummer  
-  • #sandengraved  
-  • #metaldark  
-  • #neonlight  
-  • #holographic  
-  • #text1917  
-  • #minion  
-  • #deluxesilver  
-  • #newyearcard  
-  • #bloodfrosted  
-  • #halloween  
-  • #jokerlogo  
-  • #fireworksparkle  
-  • #natureleaves  
-  • #bokeh  
-  • #toxic  
-  • #strawberry  
-  • #box3d  
-  • #roadwarning  
-  • #icecold  
-  • #luxury  
-  • #cloud  
-  • #summersand  
-  • #horrorblood  
-  • #thunder  
-  • #pornhub  
-  • #glitch  
-  • #avenger  
-  • #space  
-  • #ninjalogo  
-  • #marvelstudio  
-  • #lionlogo  
-  • #wolflogo  
-  • #steel3d  
-  • #wallgravity
+${bracketmenu} *_Maker Menu_* ${F}
+${stick}
+${stick} #3dbox   
+${stick} #drapwater   
+${stick} #lion2   
+${stick} #papercut   
+${stick} #transformer   
+${stick} #herryp   
+${stick} #neondevil   
+${stick} #3dstone   
+${stick} #3davengers   
+${stick} #thunder   
+${stick} #window   
+${stick} #graffiti   
+${stick} #pornhub   
+${stick} #glitch   
+${stick} #blackping   
+${stick} #glitch3   
+${stick} #glitch2   
+${stick} #3dspace   
+${stick} #lion   
+${stick} #3dneon   
+${stick} #neon   
+${stick} #greenneon   
+${stick} #bokeh   
+${stick} #hollographic   
+${stick} #bear   
+${stick} #wolf   
+${stick} #joker   
+${stick} #dropwater   
+${stick} #neonlight   
+${stick} #thewall   
+${stick} #natural   
+${stick} #carbon   
+${stick} #pencil   
+${stick} #blackpink  
+${stick} #neon  
+${stick} #greenneon  
+${stick} #advanceglow  
+${stick} #futureneon  
+${stick} #sandwriting  
+${stick} #sandsummer  
+${stick} #sandengraved  
+${stick} #metaldark  
+${stick} #neonlight  
+${stick} #holographic  
+${stick} #text1917  
+${stick} #minion  
+${stick} #deluxesilver  
+${stick} #newyearcard  
+${stick} #bloodfrosted  
+${stick} #halloween  
+${stick} #jokerlogo  
+${stick} #fireworksparkle  
+${stick} #natureleaves  
+${stick} #bokeh  
+${stick} #toxic  
+${stick} #strawberry  
+${stick} #box3d  
+${stick} #roadwarning  
+${stick} #icecold  
+${stick} #luxury  
+${stick} #cloud  
+${stick} #summersand  
+${stick} #horrorblood  
+${stick} #thunder  
+${stick} #pornhub  
+${stick} #glitch  
+${stick} #avenger  
+${stick} #space  
+${stick} #ninjalogo  
+${stick} #marvelstudio  
+${stick} #lionlogo  
+${stick} #wolflogo  
+${stick} #steel3d  
+${stick} #wallgravity
+${stick}
+${end}
   `
 const storagemenu =`
-❑ *_Storage Menu_*
-  • #setcmd 
-  • #listcmd 
-  • #delcmd 
-  • #lockcmd 
-  • #addmsg 
-  • #listmsg 
-  • #getmsg 
-  • #delmsg 
+${bracketmenu} *_Storage Menu_* ${F}
+${stick}
+${stick} #setcmd 
+${stick} #listcmd 
+${stick} #delcmd 
+${stick} #lockcmd 
+${stick} #addmsg 
+${stick} #listmsg 
+${stick} #getmsg 
+${stick} #delmsg 
+${stick}
+${end}
   `
 const othersmenu =`
-❑ *_Others Menu_*
-  • #owner 
-  • #listpc 
-  • #listgc 
-  • #mcserver 
-  • #speed
-  • #tes
-  • #sc 
-  • #ping 
-  • #afk 
-  • #ceknomor
-  • #cekname
-  • #sewabot
-  • #cekupdate [UpdateBot]
-  • #getscmd [GetSticker]
-  • #delete 
-  • #infochat 
-  • #request 
-  • #report 
-  • #donate 
-  • #listonline 
+${bracketmenu} *_Others Menu_* ${F}
+${stick} #owner 
+${stick} #listpc 
+${stick} #listgc 
+${stick} #mcserver 
+${stick} #speed
+${stick} #tes
+${stick} #sc 
+${stick} #ping 
+${stick} #afk 
+${stick} #ceknomor
+${stick} #cekname
+${stick} #sewabot
+${stick} #cekupdate [UpdateBot]
+${stick} #getscmd [GetSticker]
+${stick} #delete 
+${stick} #infochat 
+${stick} #request 
+${stick} #report 
+${stick} #donate 
+${stick} #listonline 
+${end}
 `
 const rulesbot =`
 *── 「 RULES BOT 」 ──*
