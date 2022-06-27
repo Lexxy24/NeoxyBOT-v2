@@ -1,5 +1,5 @@
 
-process.on('uncaughtException', console.error) //Safe Log Error
+process.on('uncaughtException', console.error)
 /*-----[⬇️MODULE]-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 require("./options/config")
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType, WAFlag } = require('@adiwajshing/baileys')
@@ -1206,43 +1206,144 @@ Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu 
 let timestamp = speed()
 let latensi = speed() - timestamp
 
-const cmdtextt =`
-❑ 𝗜𝗡𝗙𝗢 𝗦𝗘𝗥𝗩𝗘𝗥 :
-▷ 𝘓𝘪𝘣𝘳𝘢𝘳𝘺 : Baileys - Multi Device
-▷ 𝘓𝘢𝘯𝘨𝘶𝘢𝘨𝘦 : JavaScript
-▷ 𝘛𝘢𝘯𝘨𝘨𝘢𝘭 : ${hri}${buln[bulnh]}${syear}
-▷ 𝘞𝘢𝘬𝘵𝘶 : ${time2} Wib
-▷ 𝘚𝘱𝘦𝘦𝘥 : ${latensi.toFixed(4)} Second
-▷ 𝘙𝘶𝘯𝘵𝘪𝘮𝘦 : ${runtime(process.uptime())}`
+const cmdtextt =`❑ 𝗜𝗡𝗙𝗢 𝗦𝗘𝗥𝗩𝗘𝗥 :
+▷ 𝘓𝘪𝘣𝘳𝘢𝘳𝘺 : *Baileys - Multi Device*
+▷ 𝘓𝘢𝘯𝘨𝘶𝘢𝘨𝘦 : *JavaScript*
+▷ 𝘛𝘢𝘯𝘨𝘨𝘢𝘭 : *${hri}${buln[bulnh]}${syear}*
+▷ 𝘞𝘢𝘬𝘵𝘶 : *${time2} Wib*
+▷ 𝘚𝘱𝘦𝘦𝘥 : *${latensi.toFixed(4)} Second*
+▷ 𝘙𝘶𝘯𝘵𝘪𝘮𝘦 : *${runtime(process.uptime())}*`
 
+const txtttt =`*${ucapanWaktu} ${pushname} 👋*
+ 
+ *🤖 Botname : ${global.packname}*
+ *👤 Owner : ${numberOwner}*
+ *👑 Creator : Lexxy Official*`
+ 
 // Case Nye Sini Ngab
 switch(command) {
 case 'simpel':
 case 'menusimpel':
 case 'simpelmenu':
 case 'cmdsimpel':
-const smpl =`
- *${ucapanWaktu} ${pushname} 👋*
- 
- *🤖 Botname : ${global.packname}*
- *👤 Owner : ${numberOwner}*
- *👑 Creator : Lexxy Official*
- 
- [ ×-( _*SIMPLE MENU*_ )-× ]
- 
- *_➵ #nulismenu_*
- *_➵ #toolsmenu_*
- *_➵ #groupmenu_*
- *_➵ #storemenu_*
- *_➵ #ownermenu_*
- *_➵ #downloadmenu_*
- *_➵ #searchmenu_*
- *_➵ #convertmenu_*
- *_➵ #gamesmenu_*
- *_➵ #makermenu_*
- *_➵ #storagemenu_*
- *_➵ #othersmenu_*`
-await neoxy.send5Loc(m.chat, smpl, cmdtextt, locimg, bitkin)
+let fejfjej = [
+{
+"title": `   [ ×-( INFO BOT )-× ]`,
+ rows: [
+{
+"title": `➵ Contact Owner`,
+"description": 'Pembuat Bot / Owner Bot 👤',
+"rowId": `!owner`
+}
+,
+{
+"title": `➵ Speed Bot`,
+"description": 'Kecepatan Respon Bot 📈',
+"rowId": `!speed`
+}
+,
+{
+"title": `➵ Rules Bot`,
+"description": 'Peraturan & Kebijakan Privasi 📮',
+"rowId": `!rules`
+}
+,
+{
+"title": `➵ Sewa Bot`,
+"description": 'Sewa Bot Ke Group 🤖',
+"rowId": `!sewabot`
+}
+]
+}
+,
+{
+"title": `  [ ×-( LIST COMMAND )-× ]`,
+ rows: [
+{
+"title": `➵ Semua Menu`,
+"description": 'Menampilkan Semua Fitur 🎟️',
+"rowId": `!all`
+}
+]
+},
+{
+"title": `  [ ×-( SIMPLE MENU )-× ]`,
+ rows: [
+{
+"title": `➵ Nulis Menu`,
+"description": 'Menampilkan Fitur Menulis 🖌️',
+"rowId": `!nulismenu`
+}
+,  
+{
+"title": `➵ Tools Menu`,
+"description": 'Menampilkan Fitur Tools 🧵',
+"rowId": `!toolsmenu`
+}
+, 
+{
+"title": `➵ Group Menu`,
+"description": 'Menampilkan Fitur Group 👥',
+"rowId": `!groupmenu`
+}
+, 
+{
+"title": `➵ Store Menu`,
+"description": 'Menampilkan Fitur Store 🛒',
+"rowId": `!storemenu`
+}
+, 
+{
+"title": `➵ Owner Menu`,
+"description": 'Menampilkan Fitur Owner 👑',
+"rowId": `!ownermenu`
+}
+, 
+{
+"title": `➵ Download Menu`,
+"description": 'Menampilkan Fitur Download 📥',
+"rowId": `!downloadmenu`
+}
+, 
+{
+"title": `➵ Search Menu`,
+"description": 'Menampilkan Fitur Searching 🔎',
+"rowId": `!searchmenu`
+}
+, 
+{
+"title": `➵ Convert Menu`,
+"description": 'Menampilkan Fitur Converter 📦',
+"rowId": `!convertmenu`
+}
+, 
+{
+"title": `➵ Games Menu`,
+"description": 'Menampilkan Fitur Games 🎮',
+"rowId": `!gamesmenu`
+}
+, 
+{
+"title": `➵ Maker Menu`,
+"description": 'Menampilkan Fitur Maker ✏️',
+"rowId": `!makermenu`
+}
+,
+{
+"title": `➵ Storage Menu`,
+"description": 'Menampilkan Fitur Database 📂',
+"rowId": `!storagemenu`
+}
+,
+{
+"title": `➵ Others Menu`,
+"description": 'Menampilkan Fitur Others️ 🔖',
+"rowId": `!othersmenu`
+}
+]
+}
+]
+neoxy.sendList(m.chat, txtttt, cmdtextt, "Click Here!", creator, fejfjej, { quoted: m })
 break
 case 'menu': case 'help':
 let btn = [{
@@ -1331,7 +1432,7 @@ url: `${global.group}`,
 }, {
 quickReplyButton: {
 displayText: 'List Menu Bot',
-id: '#cmdfitur'
+id: '#menu'
 }
 }]
 await neoxy.send5Loc(m.chat, swtext, creator, locimg, swtn)
