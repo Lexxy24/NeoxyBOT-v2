@@ -1,5 +1,5 @@
 {
- "name": "NeoxyMD",
+ "name": "JERMD",
  "description": "Whatsapp Using Lib Baileys Multi Device",
  "version": "1.0.1",
  "main": "index.js",
@@ -18,7 +18,7 @@
   "bot-md",
   "multi-device"
  ],
- "author": "Lexxy Official",
+ "author": "Jeremi Official",
  "license": "MIT",
  "dependencies": {
   "@adiwajshing/baileys": "^4.1.0",
